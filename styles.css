@@ -1,0 +1,140 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.header {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #fff;
+}
+
+.header h1 {
+    font-family: 'Lobster', cursive;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.timer {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.content {
+    padding: 30px;
+}
+
+.question {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.options label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 15px;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.options label:hover {
+    background: #eaeaea;
+    border-color: #2575fc;
+}
+
+.options input[type="radio"] {
+    display: none;
+}
+
+.options input[type="radio"]:checked + label {
+    background: #2575fc;
+    color: #fff;
+    border-color: #2575fc;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    background: #2575fc;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background: #6a11cb;
+}
+
+.results {
+    display: none;
+    text-align: center;
+    padding: 30px;
+}
+
+.results .score {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.results p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.results .restart-button {
+    background: #2575fc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.results .restart-button:hover {
+    background: #6a11cb;
+}
