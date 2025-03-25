@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Online Quiz</h1>
+            <div class="timer">Time Left: <span id="time">03:00</span></div>
+        </div>
+        <div class="content" id="quiz-section">
+            <div class="question">
+                <p><strong>Q1:</strong> What is the capital of France?</p>
+            </div>
+            <div class="options">
+                <input type="radio" id="paris" name="question1" value="Paris">
+                <label for="paris">Paris</label>
+
+                <input type="radio" id="london" name="question1" value="London">
+                <label for="london">London</label>
+
+                <input type="radio" id="berlin" name="question1" value="Berlin">
+                <label for="berlin">Berlin</label>
+
+                <input type="radio" id="rome" name="question1" value="Rome">
+                <label for="rome">Rome</label>
+            </div>
+
+            <div class="question">
+                <p><strong>Q2:</strong> What is the largest planet in our solar system?</p>
+            </div>
+            <div class="options">
+                <input type="radio" id="jupiter" name="question2" value="Jupiter">
+                <label for="jupiter">Jupiter</label>
+
+                <input type="radio" id="earth" name="question2" value="Earth">
+                <label for="earth">Earth</label>
+
+                <input type="radio" id="mars" name="question2" value="Mars">
+                <label for="mars">Mars</label>
+
+                <input type="radio" id="venus" name="question2" value="Venus">
+                <label for="venus">Venus</label>
+            </div>
+
+            <div class="question">
+                <p><strong>Q3:</strong> Which element has the chemical symbol 'O'?</p>
+            </div>
+            <div class="options">
+                <input type="radio" id="oxygen" name="question3" value="Oxygen">
+                <label for="oxygen">Oxygen</label>
+
+                <input type="radio" id="gold" name="question3" value="Gold">
+                <label for="gold">Gold</label>
+
+                <input type="radio" id="osmium" name="question3" value="Osmium">
+                <label for="osmium">Osmium</label>
+
+                <input type="radio" id="oganesson" name="question3" value="Oganesson">
+                <label for="oganesson">Oganesson</label>
+            </div>
+
+            <button class="submit-button" id="submit-btn">Submit</button>
+        </div>
+        <div class="results" id="results-section">
+            <p class="score" id="score">Your Score: </p>
+            <p id="feedback"></p>
+            <button class="restart-button" onclick="location.reload()">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
